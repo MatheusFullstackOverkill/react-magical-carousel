@@ -1,6 +1,6 @@
 {
   "name": "react-magical-carousel",
-  "version": "1.0.68",
+  "version": "1.0.69",
   "description": "A infinite carousel component for React",
   "main": "dist/index.js",
   "files": [

@@ -30,15 +30,15 @@ onSelectSlide={({ currentSlide }) => console.log(currentSlide)}>
 
 | Name         | Type      | Default | Description
 | ------------- |:---------:| :-----:|-------------
-| `children` | `JSX.Element | JSX.Element[]` | `The components for the slides, if it's length is 1, the carousel features will be disabled`
-| `slideWidth` | `string` | `100%` | `The width of the slides, it can be in 'px' or '%'. Not the width of the wrapper component, it's width is 100% of it's parent`
-| `slideHeight` | `string` | `500px` | `The fixed height of slides, it can be in 'px' or 'vh', it overwrites the 'ratio' prop`
-| `ratio` | `number` | `-` | `The ratio proportion of the slides, it will force the same proportion in all screen sizes`
-| `slideMargin` | `string` | `-` | `The margin between each slide, it can be in 'px' or '%'`
-| `renderDotBtns` | `boolean` | `false` | `It tells if the component should render the bottom navigation`
-| `renderJumpBtns` | `boolean` | `false` | `It tells if the component should render the arrow buttons on each side`
-| `nextBtn` | `(onJump: () => Promise<void>) => JSX.Element` | `-` | `It overwrites the default next slide arrow button`
-| `previousBtn` | `(onJump: () => Promise<void>) => JSX.Element` | `-` | `It overwrites the default previous slide arrow button`
-| `jumpInterval` | `number` | `-` | `The time in miliseconds in which the carousel will wait to  automatically pass between it's slides, it won't happen if the prop it's not set`
-| `transition` | `number` | `250` | `The time in miliseconds which takes for a slide jump to another`
-| `onSelectSlide` | `Function` | `-` | `It returns an object with the current slide index and the jump count of slides from the last one to the current one`
+| children | JSX.Element | JSX.Element[] | The components for the slides, if it's length is 1, the carousel features will be disabled
+| slideWidth | string | 100% | The width of the slides, it can be in 'px' or '%'. Not the width of the wrapper component, it's width is 100% of it's parent
+| slideHeight | string | 500px | The fixed height of slides, it can be in 'px' or 'vh', it overwrites the 'ratio' prop
+| ratio | number | - | The ratio proportion of the slides, it will force the same proportion in all screen sizes
+| slideMargin | string | - | The margin between each slide, it can be in 'px' or '%'
+| renderDotBtns | boolean | false | It tells if the component should render the bottom navigation
+| renderJumpBtns | boolean | false | It tells if the component should render the arrow buttons on each side
+| nextBtn | (onJump: () => Promise<void>) => JSX.Element | - | It overwrites the default next slide arrow button
+| previousBtn | (onJump: () => Promise<void>) => JSX.Element | - | It overwrites the default previous slide arrow button
+| jumpInterval | number | - | The time in miliseconds in which the carousel will wait to  automatically pass between it's slides, it won't happen if the prop it's not set
+| transition | number | 250 | The time in miliseconds which takes for a slide jump to another
+| onSelectSlide | Function | - | It returns an object with the current slide index and the jump count of slides from the last one to the current one
