@@ -1,8 +1,12 @@
 {
   "name": "react-magical-carousel",
-  "version": "1.0.69",
+  "version": "1.0.70",
   "description": "A infinite carousel component for React",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatheusFullstackOverkill/react-magical-carousel.git"
+  },
   "files": [
     "dist"
   ],
