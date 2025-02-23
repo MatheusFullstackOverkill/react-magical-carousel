@@ -64,7 +64,7 @@ const config = {
         //   template: "./index.html", // Template for the html file used in build
         //   filename: "./index.html" // Name of the html file webpack will put in the build folder
         // }),
-        new MiniCssExtractPlugin({filename: 'style.css'}) // Name of our CSS file in the build folder
+        // new MiniCssExtractPlugin({filename: 'style.css'}) // Name of our CSS file in the build folder
     ]
 };
 // export the config object so when webpack runs it knows to use it.

@@ -1,4 +1,4 @@
-import React, { Component, MouseEventHandler } from 'react'
+import React, { Component } from 'react'
 import leftIcon from './assets/icons/arrow-left.png'
 import rightIcon from './assets/icons/arrow-right.png'
 import './style.sass'
@@ -49,6 +49,10 @@ export default class ReactMagicalCarousel extends Component<{
   jumpInterval: any = null
 
   componentDidMount() {
+    setTimeout(() => {
+      this.setup(); 
+    }, 500);
+
     window.addEventListener('resize', () => {
       setTimeout(() => {
         this.setup(); 
@@ -284,7 +288,10 @@ export default class ReactMagicalCarousel extends Component<{
 
   render() {
       return (
-          <div ref={this.sliderRef} className='react-magical-carousel' style={{
+          <div
+          ref={this.sliderRef} 
+          className='react-magical-carousel'
+          style={{
             height: this.state.slideHeight + (this.props.applyFocus ? this.state.slideHeight / 100 * 20 : 0) + 'px'
           }}>
               {this.state.children.length > 1 && this.props.renderJumpBtns &&
